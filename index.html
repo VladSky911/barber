@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Barber — Home</title>
+    <meta name="description" content="Simple responsive starter template for a barber shop" />
+    <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
+            <a class="logo" href="/">Barber</a>
+            <nav aria-label="Main navigation">
+                <ul class="nav">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Classic barber craft</h1>
+                <p>Precision haircuts, expert shaves, timeless style.</p>
+                <a class="btn" href="#contact">Book now</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Services</h2>
+                <ul>
+                    <li>Haircut — classic & modern</li>
+                    <li>Beard trim & shaping</li>
+                    <li>Straight razor shave</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p style="color:var(--muted)">Phone: (555) 123-4567 — Address: 123 Main St.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Barber. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // small helpers
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

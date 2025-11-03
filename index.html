@@ -3,49 +3,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>BarberShop Mariupol</title>
     <meta name="description" content="Simple responsive starter template for a barber shop">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <header class="site-header">
+    <header class="header">
         <a href=""></a>
         <img src="./imeg/Barber-shop.svg" alt="Логотип Барбершопа" width="150" height="150">
-        <nav>
-        <ul>
-            <il><a href="">О нас</a></il>
-            <il><a href="">Услуги и цены</a></il>
-            <il><a href="#masters">Мастера</a></il>
-            <il><a href="">Контакты</a></il>
+        <nav class="header-nav">
+        <ul class="header-list">
+            <li class="header-item"><a href="" class="header-link">О нас</a></li>
+            <li class="header-item"><a href="" class="header-link">Услуги и цены</a></li>
+            <li class="header-item"><a href="#masters" class="header-link">Мастера</a></li>
+            <li class="header-item"><a href="" class="header-link">Контакты</a></li>
         </ul>
         </nav>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-        <button type="button">онлайн-запись</button>
+        <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <button type="button" class="header-btn">онлайн-запись</button>
+        <link rel="stylesheet" href="./css/styles.css"> 
     </header>
 
     <main>
 
-        <section>
-            <ul>
-                <il><a href="" target="_blank" rel="noopener nofollow noreferrer">instagram</a></il>
-                <il><a href="" target="_blank" rel="noopener nofollow noreferrer">youtube</a></il>
+        <section class="hero">
+            <ul class="hero-list">
+                <li class="hero-item"><a href="" class="hero-link" target="_blank" rel="noopener nofollow noreferrer">instagram</a></li>
+                <li class="hero-item"><a href="" class="hero-link" target="_blank" rel="noopener nofollow noreferrer">youtube</a></li>
             </ul>
-            <p lang="en">A hair salon in Mariupol</p>
-            <h1 lang="en">Barbershop</h1>
-            <p>Эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом</p>
+            <p lang="en" class="hero-top-text">A hair salon in Mariupol</p>
+            <h1 lang="en" class="hero-title">BarberShop</h1>
+            <p class="hero-bottom-text">Эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом</p>
         </section>
 
-        <section>
-            <ul>
-                <li><img src="./imeg/about-img-2.jpg" alt="бреет щеку" width="270" height="445">
-                <li><img src="./imeg/about-img-1.jpg" alt=">стрижка машинкой" width="270" height="445">
+        <section class="about">
+            <ul class="about-list">
+                <li class="about-item"><img src="./imeg/about-img-2.jpg" alt="бреет щеку" width="270" height="445">
+                <li class="about-item"><img src="./imeg/about-img-1.jpg" alt=">стрижка машинкой" width="270" height="445">
             </ul>
-            <p>О нас</p>
-            <h2>Лучший барбершоп твоего города</h2>
-            <p>Хочеш изменить свой образ? Тебе к нам!</p>
-            <p>Мы специализируемся на мужских стрижках и стайлинге бороды. Наши мастера постоянно повышают квалификацию, чтобы быть в курсе последних тенденций и техник. 
+            <p class="about-top-text">О нас</p>
+            <h2 class="about-title">Лучший барбершоп твоего города</h2>
+            <p class="about-bottom-text">Хочеш изменить свой образ? Тебе к нам!</p>
+            <p class="about-text">Мы специализируемся на мужских стрижках и стайлинге бороды. Наши мастера постоянно повышают квалификацию, чтобы быть в курсе последних тенденций и техник. 
                 Мы используем только качественные инструменты и продукты, чтобы обеспечить лучший результат для наших клиентов.</p>
-            <button type="button">онлайн-запись</button>
+            <button type="button" class="about btn">онлайн-запись</button>
         </section>
 
         <section>
@@ -174,8 +178,8 @@
     <footer>
         <p>&copy;Copyright 2023</p>
          <ul>
-                <il><a href="" target="_blank" rel="noopener nofollow noreferrer">instagram</a></il>
-                <il><a href="" target="_blank" rel="noopener nofollow noreferrer">youtube</a></il>
+                <li><a href="" target="_blank" rel="noopener nofollow noreferrer">instagram</a></li>
+                <li><a href="" target="_blank" rel="noopener nofollow noreferrer">youtube</a></li>
         </ul>
     </footer>
 

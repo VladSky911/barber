@@ -1,3 +1,78 @@
+
+
+.btn {
+    min-width: 160px;
+    height: 40px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border: 1px solid orangered;
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+/*------------------------------HEADER----------------------------------*/
+
+.hero .container {
+    display: flex;
+    
+}
+
+.hero-list {
+    width: 90px;
+}
+
+.hero link:hover
+.hero-link:focus {
+    color: orangered;
+}
+
+.hero-content {
+    background-color: #303030;
+    padding: 272px 96px 206px 96px;
+    flex-grow: 1;
+}
+
+.header {
+    background-color: gray;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-logo {
+    margin-right: 70px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header-btn {
+    margin-left: 40px;
+}
+
+.header-connect {
+    margin-left: auto;
+    display: flex;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;

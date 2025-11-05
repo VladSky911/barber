@@ -1,4 +1,10 @@
-
+:root {
+    --main-btn-color:#ffffff;
+    --second-btn-color: #303030;
+    --main-title-color: #ffffff;
+    --second-title-color: #303030;
+    --accent-color: #ff6c00;
+}
 
 .btn {
     min-width: 160px;
@@ -9,37 +15,41 @@
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    border: 1px solid orangered;
+    border: 1px solid #ff6c00;
     background-color: transparent;
     border-radius: 30px;
 }
 
 /*------------------------------HEADER----------------------------------*/
 
-.hero .container {
-    display: flex;
-    
-}
-
-.hero-list {
-    width: 90px;
-}
-
-.hero link:hover
-.hero-link:focus {
-    color: orangered;
-}
-
-.hero-content {
-    background-color: #303030;
-    padding: 272px 96px 206px 96px;
-    flex-grow: 1;
+.link {
+    text-decoration: none;
 }
 
 .header {
     background-color: gray;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.header-link,
+.header-tel{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0,1em;
+    color: #ffffff;
+}
+
+.header-link:hover, 
+.header-link:focus
+.header-tel:hover, 
+.header-tel:focus {
+    color: var(--accent-color);
+}
+
+.header-btn {
+    margin-left: 40px;
 }
 
 .header-logo {
@@ -64,21 +74,72 @@
     margin-right: 40px;
 }
 
-.header-btn {
-    margin-left: 40px;
-}
-
 .header-connect {
     margin-left: auto;
     display: flex;
 }
 
+/*------------------------------HERO----------------------------------*/
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.hero link:hover, 
+.hero-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #rgb(157, 164, 189, 0.6);
+}
+.hero-title {
+    font-family: "Relaway", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+}
+.hero-bottom-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--main-btn-color);
+}
+
+.hero-content {
+    background-color: #303030;
+    padding: 272px 96px 206px 96px;
+    flex-grow: 1;
+}
+
+.hero .container {
+    display: flex;
+    
+}
+
+.hero-list {
+    width: 90px;
+}
+
+/*------------------------------BODY----------------------------------*/
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    color: blueviolet;
 }

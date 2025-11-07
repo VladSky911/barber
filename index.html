@@ -8,6 +8,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>BarberShop Mariupol</title>
     <meta name="description" content="Simple responsive starter template for a barber shop">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" 
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -17,18 +23,18 @@
         <img src="./imeg/Barber-shop.svg" alt="Логотип Барбершопа" width="100" height="100">
         </a>
         <nav class="header-nav">
-        <ul class="header-list-benefits list">
+        <ul class="header-list list">
             <li class="header-item"><a href="" class="header-link link">О нас</a></li>
             <li class="header-item"><a href="" class="header-link link">Услуги и цены</a></li>
             <li class="header-item"><a href="#masters" class="header-link link">Мастера</a></li>
             <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
         </ul>
         </nav>
-        <div class="header-connect"></div>
+        <div class="header-connect">
         <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
         <button type="button" class="header-btn btn">онлайн-запись</button>
-        <link rel="stylesheet" href="./css/styles.css"> 
-    </div>    
+        <link rel="stylesheet" href="./css/styles.css">  
+    </div>
     </div>
     </header>
 
@@ -37,8 +43,10 @@
         <section class="hero">
             <div class="container">
             <ul class="hero-list list">
-                <li class="hero-item"><a href="" class="hero-link link" target="_blank" rel="noopener nofollow noreferrer">instagram</a></li>
-                <li class="hero-item"><a href="" class="hero-link link" target="_blank" rel="noopener nofollow noreferrer">youtube</a></li>
+                <li class="hero-item"><a href="" class="hero-link link" target="_blank" 
+                    rel="noopener nofollow noreferrer">instagram</a></li>
+                <li class="hero-item"><a href="" class="hero-link link" target="_blank" 
+                    rel="noopener nofollow noreferrer">youtube</a></li>
             </ul>
             <div class="hero-content">
             <p lang="en" class="hero-top-text top-text">A hair salon in Mariupol</p>
@@ -49,21 +57,27 @@
         </section>
 
         <section class="about">
+            <div class="container">
             <ul class="about-list list">
                 <li class="about-item"><img src="./imeg/about-img-2.jpg" alt="бреет щеку" width="270" height="445">
                 <li class="about-item"><img src="./imeg/about-img-1.jpg" alt=">стрижка машинкой" width="270" height="445">
             </ul>
+            <div class="abou-content">
             <p class="about-top-text top-text">О нас</p>
             <h2 class="about-title title">Лучший барбершоп твоего города</h2>
             <p class="about-bottom-text bottom-text">Хочеш изменить свой образ? Тебе к нам!</p>
             <p class="about-text">Мы специализируемся на мужских стрижках и стайлинге бороды. Наши мастера постоянно повышают квалификацию, чтобы быть в курсе последних тенденций и техник. 
                 Мы используем только качественные инструменты и продукты, чтобы обеспечить лучший результат для наших клиентов.</p>
             <button type="button" class="about-btn btn">онлайн-запись</button>
+            </div>
+            </div>
         </section>
 
         <section class="services">
+            <div class="container">
             <p class="services-top-text top-text">Проведи время в компании лучших мастеров</p>
             <h2 class="services-title title">Услуги и цены</h2>
+
             <ul class="services-list-left">
                 <li class="services-item-left list">
                     <p class="services-itm-text">Мужская стрижка</p>
@@ -101,9 +115,11 @@
                 </li>
             </ul>
         <button type="button" class="services-btn btn">онлайн-запись</button>
+        </div>
         </section>
 
         <section class="benefits">
+            <div class="container">
             <ul class="benefits-list">
                 <li class="benefits-item list">
                     <span class="benefits-num">35</span>
@@ -128,9 +144,11 @@
                 Мы создаем атмосферу, в которой каждый клиент чувствует себя комфортно и уверенно. 
                 Наши мастера обладают высоким уровнем профессионализма и 
                 всегда готовы предложить индивидуальный подход к каждому посетителю.</p>
+            </div>
         </section>
         
         <section id="masters" class="masters">
+            <div class="container">
             <p class="masters-top-text top-text">Для настоящих ценителей атмосферы
             </p>
             <h2 class="masters-title title">Наши мастера
@@ -152,6 +170,7 @@
                     <p class="masters-item-text">Интелегентный</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <section class="galery">

@@ -4,12 +4,37 @@
     --main-title-color: #ffffff;
     --second-title-color: #303030;
     --accent-color: #ff6c00;
+    --tipical-margin: 20px;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, li {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .btn {
@@ -81,7 +106,7 @@ body {
 }
 
 .header-link,
-.header-tel{
+.header-tel {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -124,10 +149,16 @@ body {
 
 .header-connect {
     margin-left: auto;
-    display: flex;
+    display: center;
 }
 
 /*------------------------------HERO----------------------------------*/
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
 
 .hero-link {
     font-weight: 600;
@@ -135,7 +166,7 @@ body {
     line-height: 1.36;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #303030;
 }
 
 .hero-link:hover, 
@@ -145,12 +176,15 @@ body {
 
 .hero-top-text {
     color: #rgb(157, 164, 189, 0.6);
+    margin-bottom: var(--tipical-margin);
 }
 .hero-title {
     color: var(--main-title-color);
+    margin-bottom: var(--tipical-margin);
 }
 .hero-bottom-text {
     color: #9da4bd;
+    max-width: 400px;
 }
 
 .hero-content {
@@ -169,44 +203,96 @@ body {
 
 /*------------------------------ABOUT----------------------------------*/
 
+.about {
+    padding-top: 100px;
+    padding-bottom: 121px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .container {
+    display: flex;  
+}
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+}
+
+.about-item + .about-item {
+    margin-left: 30px;
+}
+
 .about-top-text {
     color: #303030;
+    margin-bottom: var(--tipical-margin);
 }
 .about-title {
     color: var(--second-title-color);
+    margin-bottom: var(--tipical-margin);
 }
 .about-bottom-text {
     color: #555555;
+    margin-bottom: var(--tipical-margin);
 }
 .about-text {
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: #555555;
+    margin-bottom: 40px;
 }
 
 /*------------------------------SERVICES----------------------------------*/
 
 .services {
     background-color: #303030;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
+
 .services-top-text {
     color: #rgb(157, 164, 189, 0.6);
+    margin-bottom: var(--tipical-margin);
 }
+
 .services-title {
     color: var(--main-title-color);
+    margin-bottom: 44px;
+}
+
+.services-list-left,
+.services-list-right {
+    border: 1px solid #555555;
+    padding: 30px 40px;
 }
 
 .services-itm-text {
+    margin-bottom: var(--tipical-margin);
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
 }
 
+.services-btn {
+    margin-top: 0px auto;
+    display: block;
+}
+
 /*------------------------------BENEFITS----------------------------------*/
 
+.benefits {
+    padding-top: 143px;
+    padding-bottom: 137px;
+}
+
 .benefits-item {
+    width: 170px;
+    height: 133px;
+    border: 1px solid #555555;
+    padding: 20px 24px;
 }
 
 .benefits-num {
@@ -216,6 +302,7 @@ body {
     text-align: center;
     letter-spacing: 0.05em;
     color: #303030;
+    display: block;
 }
 
 .benefits-item-text {
@@ -228,9 +315,11 @@ body {
 
 .benefits-top-text {
     color: #303030;
+    margin-bottom: var(--tipical-margin);
 }
 .benefits-title {
     color: var(--second-title-color);
+    margin-bottom: var(--tipical-margin);
 }
 
 .benefits-bottom-text {
@@ -239,12 +328,19 @@ body {
 
 /*------------------------------MASTERS----------------------------------*/
 
+.masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .masters-top-text {
     color: #303030;
+    margin-bottom: var(--tipical-margin);
 }
 
 .masters-title {
     color: var(--second-title-color);
+    margin-bottom: 44px;
 }
 
 .masters-item-titel {
@@ -254,6 +350,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #303030;
+    margin-bottom: 8px;
+    margin-top: 30px;
 }
 
 .masters-item-text {

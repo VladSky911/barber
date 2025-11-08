@@ -262,10 +262,25 @@ body {
     margin-bottom: 44px;
 }
 
-.services-list-left,
-.services-list-right {
+.services-list {
+    flex-grow: 1;
+}
+
+.services-lists {
     border: 1px solid #555555;
     padding: 30px 40px;
+    flex-grow: 1;
+    display: flex;
+    gap: 60px;
+}
+
+.services-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-item :last-child {
+    margin-bottom: 0;
 }
 
 .services-itm-text {
@@ -274,11 +289,13 @@ body {
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
+    display: flex;
 }
 
 .services-btn {
     margin-top: 0px auto;
     display: block;
+    margin-top: 50px;
 }
 
 /*------------------------------BENEFITS----------------------------------*/
@@ -343,6 +360,18 @@ body {
     margin-bottom: 44px;
 }
 
+.masters-list {
+    display: flex;
+}
+
+.masters-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.masters-item {
+    flex-basis: calc(100% / 3 - 30px);
+}
+
 .masters-item-titel {
     font-weight: 400;
     font-size: 18px;
@@ -366,6 +395,18 @@ body {
 
 .galery-top-text {
     color: #303030;
+    margin-bottom: 44px;
+}
+
+.galery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.galery-item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 15px;
 }
 
 /*------------------------------ONLINE----------------------------------*/

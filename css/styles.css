@@ -175,7 +175,7 @@ body {
 }
 
 .hero-top-text {
-    color: #rgb(157, 164, 189, 0.6);
+    color: #9da4bd;
     margin-bottom: var(--tipical-margin);
 }
 .hero-title {
@@ -189,6 +189,13 @@ body {
 
 .hero-content {
     background-color: #303030;
+    background-image: linear-gradient( 
+        rgba(25, 28, 38, 0.5),
+        rgba(25, 28, 38, 0.5)),
+     url(../imeg/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 272px 96px 206px 96px;
     flex-grow: 1;
 }
@@ -247,13 +254,17 @@ body {
 /*------------------------------SERVICES----------------------------------*/
 
 .services {
-    background-color: #303030;
+    background-color: #949494;
+    background-image: url(../imeg/services-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 130px;
     padding-bottom: 130px;
 }
 
 .services-top-text {
-    color: #rgb(157, 164, 189, 0.6);
+    color: gray;
     margin-bottom: var(--tipical-margin);
 }
 
@@ -296,6 +307,7 @@ body {
     margin-top: 0px auto;
     display: block;
     margin-top: 50px;
+    margin-left: 41%;
 }
 
 /*------------------------------BENEFITS----------------------------------*/

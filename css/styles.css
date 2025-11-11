@@ -401,7 +401,47 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    margin-bottom: 30px;
 }
+
+.masters-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.masters-soc-item {
+    width: 44px;    
+    height: 44px;
+    margin-right: 10px;
+}
+
+.masters-soc-item:last-child {
+    margin-right: 0;
+}
+
+.masters-soc-link {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.masters-soc-icon {
+    fill: black;
+}
+
+.masters-soc-link:hover .masters-soc-icon,
+.masters-soc-link:focus .masters-soc-icon {
+    background-color: #ffffff;
+}
+
+.masters-soc-link:hover .masters-soc-icon,
+.masters-soc-link:focus .masters-soc-icon {
+    fill: var(--accent-color);
+}
+
 
 /*------------------------------GALERY----------------------------------*/
 

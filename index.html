@@ -43,7 +43,7 @@
         </nav>
         <div class="header-connect">
         <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-        <button type="button" class="header-btn btn">онлайн-запись</button>
+        <button type="button" class="header-btn btn" data-modal-open>онлайн-запись</button>
           
     </div>
     </div>
@@ -169,15 +169,15 @@
             </h2>
             <ul class="masters-list list">
                 <li class="masters-item">
+                    <div class="masters-top-wrap">
                     <img src="./imeg/masters-img-1.jpg" alt="мастер с бородой" 
                     width="350" height="350">
                     <p class="masters-color-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Atque error obcaecati ipsa totam sunt aut ea! Commodi quibusdam, 
-                        fugit quia, autem, 
-                        doloremque obcaecati 
-                        voluptatibus delectus maiores totam tenetur suscipit sint.
+                    Профессиональный барбер с точным чувством стиля, 
+                    подбирающий идеальный образ под индивидуальные черты. 
+                    Работает аккуратно, уверенно и всегда учитывает пожелания клиента.
                     </p>
+                    </div>
                     <h3 class="masters-item-titel">Владимир</h3>
                     <p class="masters-item-text">Универсальный</p>
                     <ul class="masters-soc-list list">
@@ -210,7 +210,15 @@
                  </ul>
                 </li>
                 <li class="masters-item">
-                    <img src="./imeg/masters-img-2.jpg" alt="мастер с машинкой" width="350" height="350">
+                    <div class="masters-top-wrap">
+                    <img src="./imeg/masters-img-2.jpg" alt="мастер с машинкой" 
+                    width="350" height="350">
+                    <p class="masters-color-text">
+                        Барбер с глубоким пониманием формы и текстуры волос, 
+                        мастер точных линий и чистых фейдов. 
+                        Каждый визит превращает в стильный ритуал ухода.
+                    </p>
+                    </div>
                     <h3 class="masters-item-titel">Игорь</h3>
                     <p class="masters-item-text">Опытный</p>
                     <ul class="masters-soc-list list">
@@ -244,7 +252,16 @@
                        </li>
 
                 <li class="masters-item">
-                    <img src="./imeg/masters-img-3.jpg" alt="мастер с ножницами" width="350" height="350">
+                    <div class="masters-top-wrap">
+                    <img src="./imeg/masters-img-3.jpg" alt="мастер с ножницами" 
+                    width="350" height="350">
+                    <p class="masters-color-text">
+                        Специалист по мужским стрижкам и уходу за бородой, 
+                        совмещающий классику и современные техники. 
+                        Создаёт комфортную атмосферу и идеальный результат.
+                    </p>
+                    </div>
+                    
                     <h3 class="masters-item-titel">Сергей</h3>
                     <p class="masters-item-text">Интелегентный</p>
                     <ul class="masters-soc-list list">
@@ -324,11 +341,18 @@
                     class="footer-link link" rel="noopener nofollow noreferrer">youtube</a></li>
         </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="model-close-btn" data-modal-close>
+                <svg class="icon-close" width="20" height="20">
+                    <use href="./imeg/icon-close.svg"></use>
+                    </svg>
+            </button>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-  AOS.init();
-</script>
-
+    <script> AOS.init();</script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

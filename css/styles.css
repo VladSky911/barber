@@ -188,12 +188,13 @@ body {
     display: flex;
     align-items: flex-end;
     padding-left: 22px;
-    padding-bottom: 33px;
+    padding-bottom: 30px;
 }
 
 .hero-list {
     display: flex;
-    transform: rotate(-90deg) translate(-19px);
+    padding-right: 100px;
+    transform: rotate(-90deg);
     transform-origin: top left;
     align-items: center;
 }

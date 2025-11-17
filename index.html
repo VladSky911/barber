@@ -346,17 +346,54 @@
     </footer>
     <div class="backdropn" data-modal>
         <div class="modal">
-            <button type="button" class="model-close-btn" data-modal-close>
+            <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="icon-close" width="20" height="20">
                     <use href="./imeg/icon-close.svg"></use>
                     </svg>
             </button>
             <p class="modal-title">Запись на прием</p>
             <form>
-                <input type="text" class="model-input" placeholder="Ваше имя">
-                <input type="tel" class="model-input" placeholder="Ваш телефон">
-                <input type="mail" class="model-input" placeholder="Ваш E-mail">
-                <button type="submit">Отправить</button>
+                <label class="modal-label">Ваше имя
+            <input 
+                type="text"
+                class="modal-input"
+                name="user-name"
+                placeholder="Иван"
+                required
+                minlength="2">
+            </label>
+
+            <div class="modal-field">
+            <label for="user-tel" class="modal-label">Ваш телефон</label>
+            <input 
+                type="tel" 
+                class="modal-input" 
+                name="user-tel" 
+                placeholder="Телефон" 
+                required
+                minlength="9"
+                id="user-tel">
+            </div>    
+            
+            <label for="user-E-mail" class="modal-label">Ваш E-mail</label>
+            <input 
+                type="mail" 
+                class="modal-input" 
+                name="user-E-mail" 
+                placeholder="E-mail" 
+                required>
+                
+            <div class="modal-field">
+            <label for="user-text" class="modal-label">Ваше сообщение</label>
+            <textarea 
+            name="user-text" 
+            id="user-text"
+            class="modal-text"
+            placeholder="Введите сообщение"
+            ></textarea>
+            </div>
+
+            <button type="submit">Отправить</button>
             </form>
         </div>
     </div>

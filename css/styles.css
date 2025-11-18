@@ -711,13 +711,27 @@ body {
     margin-bottom: 15px;
 }
 
+.modal-field {
+    margin-bottom: 10px;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .modal-input {
     width: 100%;
     height: 45px;
     border: 1px solid #999999;
     background-repeat: 4px;
-    margin-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 30px;
     color: #000000;
 }
 
@@ -739,6 +753,8 @@ body {
 .modal-label {
     font-size: 16px;
     color: #676767;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .modal-text {
@@ -752,6 +768,33 @@ body {
 .modal-field .modal-text {
     margin-bottom: 10px;
     padding-left: 10px;
+}
+
+.check-text {
+    color: #555555;
+    font-size: 14px;
+    display: flex;
+}
+
+.check-text::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid #191c26;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.modal-check:checked + .check-text::before {
+    background-color: var(--accent-color);
+    background-image: url(../icons/check.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+..modal-check:focus + .check-text::before {
+    border-color: var(--accent-color);
 }
 
 .is-hidden {

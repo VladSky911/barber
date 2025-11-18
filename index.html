@@ -352,19 +352,27 @@
                     </svg>
             </button>
             <p class="modal-title">Запись на прием</p>
+            
             <form>
-                <label class="modal-label">Ваше имя
+            <div class="modal-field">
+            <label class="modal-label">Ваше имя</label>
+            <div class="input-wrap">
             <input 
                 type="text"
                 class="modal-input"
                 name="user-name"
                 placeholder="Иван"
                 required
-                minlength="2">
-            </label>
+                minlength="2"/>
+            <svg class="modal-icon" width="18" height="18">
+                <use href="./icons/person.svg"></use>
+            </svg>   
+            </div> 
+            </div>     
 
             <div class="modal-field">
             <label for="user-tel" class="modal-label">Ваш телефон</label>
+            <div class="input-wrap">
             <input 
                 type="tel" 
                 class="modal-input" 
@@ -373,24 +381,45 @@
                 required
                 minlength="9"
                 id="user-tel">
+            <svg class="modal-icon" width="18" height="18">
+                <use href="./icons/call.svg"></use>    
+            </div>
             </div>    
             
-            <label for="user-E-mail" class="modal-label">Ваш E-mail</label>
+            <div class="modal-field">
+            <label for="user-email" class="modal-label">Ваш E-mail</label>
+            <div class="input-wrap">
             <input 
                 type="mail" 
                 class="modal-input" 
                 name="user-E-mail" 
                 placeholder="E-mail" 
-                required>
-                
+                required
+                id="user-email">
+            <svg class="modal-icon" width="18" height="18">
+                <use href="./icons/mail.svg"></use>    
+            </div>
+            </div>    
+
             <div class="modal-field">
             <label for="user-text" class="modal-label">Ваше сообщение</label>
             <textarea 
-            name="user-text" 
-            id="user-text"
-            class="modal-text"
-            placeholder="Введите сообщение"
+                name="user-text" 
+                id="user-text"
+                class="modal-text"
+                placeholder="Введите сообщение"
             ></textarea>
+            </div>
+
+            <div class="modal-field">
+                <input 
+                type="checkbox" 
+                name="privacy" 
+                value="true" 
+                class="modal-check visualy-hidden"
+                id="privacy"
+            />
+            <label for="privacy" class="check-text">Политика конфиденциальности</label>
             </div>
 
             <button type="submit">Отправить</button>

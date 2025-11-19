@@ -134,6 +134,7 @@ body {
 }
 
 .header-btn {
+    color: var(--main-btn-color);
     margin-left: 40px;
 }
 
@@ -380,6 +381,7 @@ body {
 }
 
 .services-btn {
+    color: var(--main-btn-color);
     margin-top: 0px auto;
     display: block;
     margin-top: 50px;
@@ -561,6 +563,10 @@ body {
 
 /*------------------------------GALERY----------------------------------*/
 
+.galery {
+    margin-bottom: 100px;
+}
+
 .galery-top-text {
     color: #303030;
     margin-bottom: 44px;
@@ -599,10 +605,88 @@ body {
     padding-top: 130px;
     padding-bottom: 130px;
     width: calc(50% + 15px);
+    padding-right: 40px;
 }
 
 .online-titel {
     color: var(--main-title-color);
+    margin-bottom: 44px;
+}
+
+.input-field {
+    position: relative;
+    width: 265px;
+}
+
+.online-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.online-input {
+    width: 100%;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid #526196;
+    background-color:transparent;
+    outline: none;
+    color: #bdbdbdbe;
+}
+
+.online-input:focus {
+    border-color: #ffffff;
+}
+
+.online-input:focus + .online-label,
+.online-input:not(:placeholder-shown) + .online-label {
+  color: #ffffff;
+  transform: translateY(-100%);
+  font-size: 12px;
+}
+
+.online-mess:focus + .online-label,
+.online-mess:not(:placeholder-shown) + .online-label {
+  color: #ffffff;
+  transform: translateY(-100%);
+  font-size: 12px;
+}
+
+.online-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #949494;
+    pointer-events: none;
+    transition: 300ms ease all;
+}
+
+.text-field {
+    width: 100%;
+    position: relative;
+    margin-top: 44px;
+    padding-left: 0;
+}
+
+.online-mess {
+    width: 100%;
+    height: 76px;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #526196;
+    background-color:transparent;
+    outline: none;
+    color: #bdbdbdbe;
+    margin-bottom: 44px;
+}
+
+.online-btn {
+    color: var(--main-btn-color);
 }
 
 /*------------------------------CONTACTS----------------------------------*/
@@ -676,6 +760,8 @@ body {
     color: var(--accent-color);
 }
 
+/*------------------------------FORM----------------------------------*/
+
 
 .backdrop {
     width: 100%;
@@ -724,6 +810,7 @@ body {
     left: 7px;
     top: 50%;
     transform: translateY(-50%);
+    outline: none;
 }
 
 .modal-input {
@@ -742,6 +829,11 @@ body {
 .modal-input::placeholder {
     color: #686868;
     font-size: 12px;
+}
+
+.modal-input:focus {
+    border-color: var(--accent-color);
+    outline: none;
 }
 
 .modal-close-btn {

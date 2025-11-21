@@ -30,20 +30,20 @@
 <body>
     <header class="header">
     <div class="container">
-        <a class="header-logo animate__animated animate__bounce" href="">
+        <a class="logo animate__animated animate__bounce" href="">
         <img src="./imeg/Barber-shop.svg" alt="Логотип Барбершопа" width="100" height="100">
         </a>
-        <nav class="header-nav">
-        <ul class="header-list list">
-            <li class="header-item"><a href="" class="header-link link">О нас</a></li>
-            <li class="header-item"><a href="" class="header-link link">Услуги и цены</a></li>
-            <li class="header-item"><a href="#masters" class="header-link link">Мастера</a></li>
-            <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
+        <nav class="nav">
+        <ul class="nav__list list">
+            <li class="nav__item"><a href="" class="nav__link link">О нас</a></li>
+            <li class="nav__item"><a href="" class="nav__link link">Услуги и цены</a></li>
+            <li class="nav__item"><a href="#masters" class="nav__link link">Мастера</a></li>
+            <li class="nav__item"><a href="" class="nav__link link">Контакты</a></li>
         </ul>
         </nav>
-        <div class="header-connect">
-        <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-        <button type="button" class="header-btn btn" data-modal-open>онлайн-запись</button>
+        <div class="connect">
+        <a class="connect__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <button type="button" class="connect__btn btn" data-modal-open>онлайн-запись</button>
           
     </div>
     </div>
@@ -54,18 +54,19 @@
     <!-- Section Hero -->
         <section class="hero">
             <div class="container">
-                <div class="hero-soc">
-            <ul class="hero-list list">
-                <li class="hero-item"><a href="" class="hero-link link" target="_blank" 
+                <div class="soc">
+            <ul class="soc__list list">
+                <li class="soc__item"><a href="" class="soc__link link" target="_blank" 
                     rel="noopener nofollow noreferrer">instagram</a></li>
-                <li class="hero-item"><a href="" class="hero-link link" target="_blank" 
+                <li class="soc__item"><a href="" class="soc__link link" target="_blank" 
                     rel="noopener nofollow noreferrer">youtube</a></li>
             </ul>
                 </div>
+                
             <div class="hero-content">
-            <p lang="en" class="hero-top-text top-text">A hair salon in Mariupol</p>
-            <h1 lang="en" class="hero-title">BarberShop</h1>
-            <p class="hero-bottom-text bottom-text">Эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом</p>
+            <p lang="en" class="hero-content__top-text top-text top-text--light">A hair salon in Mariupol</p>
+            <h1 lang="en" class="hero-content__title">BarberShop</h1>
+            <p class="hero-content__bottom-text bottom-text">Эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом</p>
            </div>
         </div>
         </section>
@@ -74,17 +75,17 @@
 
         <section class="about">
             <div class="container">
-            <ul class="about-list list">
-                <li class="about-item"><img src="./imeg/about-img-2.jpg" alt="бреет щеку" width="270" height="445">
-                <li class="about-item"><img src="./imeg/about-img-1.jpg" alt=">стрижка машинкой" width="270" height="445">
+            <ul class="pic-list list">
+                <li class="pic-list__item"><img src="./imeg/about-img-2.jpg" alt="бреет щеку" width="270" height="445">
+                <li class="pic-list__item"><img src="./imeg/about-img-1.jpg" alt=">стрижка машинкой" width="270" height="445">
             </ul>
-            <div class="abou-content">
-            <p class="about-top-text top-text">О нас</p>
-            <h2 class="about-title title">Лучший барбершоп твоего города</h2>
-            <p class="about-bottom-text bottom-text">Хочеш изменить свой образ? Тебе к нам!</p>
-            <p class="about-text">Мы специализируемся на мужских стрижках и стайлинге бороды. Наши мастера постоянно повышают квалификацию, чтобы быть в курсе последних тенденций и техник. 
+            <div class="about-content">
+            <p class="about-content__top-text top-text top-text--dark">О нас</p>
+            <h2 class="about-content__title title">Лучший барбершоп твоего города</h2>
+            <p class="about-content__bottom-text bottom-text">Хочеш изменить свой образ? Тебе к нам!</p>
+            <p class="about-content__text">Мы специализируемся на мужских стрижках и стайлинге бороды. Наши мастера постоянно повышают квалификацию, чтобы быть в курсе последних тенденций и техник. 
                 Мы используем только качественные инструменты и продукты, чтобы обеспечить лучший результат для наших клиентов.</p>
-            <button type="button" class="about-btn btn">онлайн-запись</button>
+            <button type="button" class="about-content__btn btn">онлайн-запись</button>
             </div>
             </div>
         </section>
@@ -155,12 +156,14 @@
                     <p class="benefits-item-text">Подарков постоянным клиентам</p>
                 </li>
             </ul>
+            <div class="benefits-content">
             <p class="benefits-top-text top-text">Старая традиционная школа</p>
             <h2 class="benefits-title title">Почему приходят к нам?</h2>
             <p class="benefits-bottom-text bottom-text">В нашем барбершопе мы придерживаемся старых традиций и ценим качество обслуживания. 
                 Мы создаем атмосферу, в которой каждый клиент чувствует себя комфортно и уверенно. 
                 Наши мастера обладают высоким уровнем профессионализма и 
                 всегда готовы предложить индивидуальный подход к каждому посетителю.</p>
+            </div>
             </div>
         </section>
         

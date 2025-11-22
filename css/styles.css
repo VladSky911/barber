@@ -92,6 +92,14 @@ body {
     letter-spacing: 0.05em;
 }
 
+.title--light {
+    color: var(--main-title-color);
+}
+
+.title--dark {
+    color: var(--second-title-color);
+}
+
 .visualy-hidden {
     position: absolute;
     white-space: nowrap;
@@ -464,39 +472,39 @@ body {
     padding-bottom: 130px;
 }
 
-.masters-top-text {
-    color: #303030;
+.masters__top-text {
     margin-bottom: var(--tipical-margin);
 }
 
-.masters-title {
+.masters__title {
     color: var(--second-title-color);
     margin-bottom: 44px;
 }
 
-.masters-list {
+.card-list {
     display: flex;
+    margin-left: -30px;
 }
 
-.masters-item:not(:last-child) {
+.card-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.masters-item {
+.card-list__item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
 }
 
-.masters-item:hover .masters-color-text {
+.card-list__item:hover .card-list__color-text {
     transform: translateY(0);
 }
 
-.masters-top-wrap {
+.card-list__top-wrap {
     position: relative;
     overflow: hidden;
 }
 
-.masters-color-text {
+.card-list__color-text {
     position: absolute;
     top: 0;
     color: #ffffff;
@@ -508,7 +516,7 @@ body {
     transition: transform 300ms linear;
 }
 
-.masters-item-titel {
+.card-list__item-titel {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.38;
@@ -519,7 +527,7 @@ body {
     margin-top: 30px;
 }
 
-.masters-item-text {
+.card-list__item-text {
     font-size: 14px;
     line-height: 1.35;
     text-align: center;
@@ -528,22 +536,22 @@ body {
     margin-bottom: 30px;
 }
 
-.masters-soc-list {
+.socials {
     display: flex;
     justify-content: center;
 }
 
-.masters-soc-item {
+.socials__item {
     width: 44px;    
     height: 44px;
     margin-right: 10px;
 }
 
-.masters-soc-item:last-child {
+.socials__item:last-child {
     margin-right: 0;
 }
 
-.masters-soc-link {
+.socials__link {
     width: 100%;
     background-color: #ffffff;
     border-radius: 80%;
@@ -552,17 +560,17 @@ body {
     justify-content: center;
 }
 
-.masters-soc-icon {
+.socials__icon {
     fill: black;
 }
 
-.masters-soc-link:hover .masters-soc-icon,
-.masters-soc-link:focus .masters-soc-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
     background-color: #ffffff;
 }
 
-.masters-soc-link:hover .masters-soc-icon,
-.masters-soc-link:focus .masters-soc-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
     fill: var(--accent-color);
 }
 

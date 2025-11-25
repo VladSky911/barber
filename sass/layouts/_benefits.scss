@@ -14,15 +14,16 @@
     height: 133px;
     background-color: #f7f7f7;
     padding: 20px 24px;
-}
-
-.benefits-item:nth-child(odd) {
+    &:nth-child(odd) {
     margin-right: 30px;
 }
 
-.benefits-item:nth-child(even) {
+    &:nth-child(even) {
     margin-top: 30px;
 }
+}
+
+
 
 .benefits-num {
     font-weight: 700;

@@ -1,10 +1,24 @@
 @import "./utils/vars";
 @import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
 
 @import "./components/container";
+@import "./components/top-text";
+@import "./components/title";
+@import "./components/btn";
+@import "./components/bottom-text";
+@import "./components/socials";
+@import "./components/modal";
+
 
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/about";
 @import "./layouts/services";
 @import "./layouts/benefits";
+@import "./layouts/masters";
+@import "./layouts/galery";
+@import "./layouts/online-contact";
+@import "./layouts/contacts";
+@import "./layouts/footer";

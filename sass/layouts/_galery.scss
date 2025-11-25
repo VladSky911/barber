@@ -1,0 +1,19 @@
+.galery {
+    margin-bottom: 100px;
+}
+
+.galery-top-text {
+    color: #303030;
+    margin-bottom: 44px;
+}
+
+.galery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.galery-item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 15px;
+}

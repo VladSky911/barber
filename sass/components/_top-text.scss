@@ -1,10 +1,9 @@
 .top-text {
-    @include font(11px, 600, 1.36, 0.1em);
-    // font-weight: 600;
-    // font-size: 11px;
-    // line-height: 1.36;
-    // letter-spacing: 0.1em;
+    @include font(11px, 600, 1.91, 0.1em);
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        @include font(null, null, 1.36, null);
+    }
     display: flex;
     align-items: center;
     &-light {
@@ -21,6 +20,7 @@
     height: 1px;
     background-color: currentColor;
     margin-right: 21px;
+    flex-shrink: 0;
 }
 }
 

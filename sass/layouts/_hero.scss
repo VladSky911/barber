@@ -5,13 +5,27 @@
 
 .hero .container {
     display: flex;
+    width: 100%;
+    padding: 0;
+    @include tablet {
+    width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    @include desktop {
+    width: 1200px;
+    }
 }
 
 .soc {
     width: 90px;
-    display: flex;
+    display: none;
     align-items: flex-end;
-    padding-left: 22px;
+    // padding-left: 24px;
+    // padding-bottom: 44px;
+    @include tablet {
+    display: flex;
+}
 }
 
 .soc__link {
@@ -24,10 +38,19 @@
 }
 
 .soc__list {
+    @include tablet {
     display: flex;
     transform: rotate(-90deg) translate(-19px);
     transform-origin: top left;
     align-items: center;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #303030;
+        margin-right: 40px;
+    }
+ }
 }
 
 .soc__list::before {
@@ -53,28 +76,51 @@
 }
 
 .hero-content {
-    background-color: #303030;
+    background-color: #202020;
     background-image: linear-gradient( 
         rgba(25, 28, 38, 0.5),
         rgba(25, 28, 38, 0.5)),
      url(../imeg/hero-bg.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 272px 96px 206px 96px;
+    // padding: 272px 96px 206px 96px;
+    padding: 208px 31px 188px;
     flex-grow: 1;
+
+    @include tablet {
+        padding: 280px 70px 234px;
+    }
+    @include desktop {
+        padding: 272px 96px 206px 96px;
+    }
 }
 
 .hero-content__top-text {
-    margin-bottom: var(--tipical-margin);
+    margin-bottom: var (--tipical-margin);
 }
 .hero-content__title {
+    front-family: Relaway, sans-serif;
+    font-size: 48px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
     color: var(--main-title-color);
     margin-bottom: var(--tipical-margin);
+    @include desktop {
+    font-size: 72px;
+    line-height: 1.16;
+    }
 }
 
 
 .hero-content__bottom-text {
     color: #9da4bd;
+    max-width: 306px;
+    @include tablet {
+    max-width: 349px;
+    }
+    @include desktop {
     max-width: 400px;
+    }
 }

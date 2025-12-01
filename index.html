@@ -51,8 +51,10 @@
 
     <!-- Uniq Content -->
     <main>
+
     <!-- Section Hero -->
-        <!-- <section class="hero">
+
+        <section class="hero">
             <div class="container">
                 <div class="soc">
             <ul class="soc__list list">
@@ -69,7 +71,7 @@
             <p class="hero-content__bottom-text bottom-text">Эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом</p>
            </div>
         </div>
-        </section> -->
+        </section>
 
          <!-- Section About -->
 
@@ -308,10 +310,27 @@
             <p class="galery-top-text top-text">Идеальная стрижка начинается здесь</p>
             <h2 class="visualy-hidden">Галерея</h2>
             <ul class="galery-list list">
-                <li class="galery-item"><img src="./imeg/galery-img-1.jpg" alt="Стрегут клиента" width="270" height="360"></li>
-                <li class="galery-item"><img src="./imeg/galery-img-2.jpg" alt="Стрегут клиента 2" width="270" height="360"></li>
-                <li class="galery-item"><img src="./imeg/galery-img-3.jpg" alt="Стрегут клиента 3" width="270" height="360"></li>
-                <li class="galery-item"><img src="./imeg/galery-img-4.jpg" alt="Стрегут клиента 4" width="270" height="360"></li>
+                <li class="galery-item">
+                    <picture>
+                        <!-- <source 
+                        srcset="./imeg/galery-img-1.jpg 1x, ./imeg/galery-img-1-x2.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source 
+                        srcset="./imeg/galery-img-1-tab.jpg 1x, ./imeg/galery-img-1-tab-x2.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source 
+                        srcset="./imeg/galery-img-1-mob.jpg 1x, ./imeg/galery-img-1-mob-x2.jpg 2x"
+                        media="(min-width: 320px)">
+                    </picture> -->
+                    <img 
+                    srcset="./imeg/galery-img-1.jpg 1x, ./imeg/galery-img-1-x2.jpg 2x"
+                    src="./imeg/galery-img-1.jpg" alt="Стрегут клиента" width="270" height="360"></li>
+                <li class="galery-item">
+                    <img src="./imeg/galery-img-2.jpg" alt="Стрегут клиента 2" width="270" height="360"></li>
+                <li class="galery-item">
+                    <img src="./imeg/galery-img-3.jpg" alt="Стрегут клиента 3" width="270" height="360"></li>
+                <li class="galery-item">
+                    <img src="./imeg/galery-img-4.jpg" alt="Стрегут клиента 4" width="270" height="360"></li>
             </ul>
             </div>
         </section>

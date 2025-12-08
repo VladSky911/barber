@@ -5,6 +5,10 @@
     padding-bottom: 32px;
 }
 
+.nav {
+    display: none;
+}
+
 .nav__link,
 .connect__tel {
     font-weight: 600;
@@ -50,6 +54,11 @@
 }
 
 .connect {
+    display: none;
     margin-left: auto;
     display: center;
+}
+
+.burger {
+    display: none;
 }

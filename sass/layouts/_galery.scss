@@ -1,34 +1,36 @@
 .galery {
-    // margin-bottom: 100px;
-    padding-top: 84px;
-    padding-bottom: 84px;
-    @media screen and (min-width: 768px) {
+  // margin-bottom: 100px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @media screen and (min-width: 768px) {
     padding-top: 100px;
     padding-bottom: 100px;
-    }
-    @media screen and (min-width: 1200px) {
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 130px;
     padding-bottom: 130px;
-    }
+  }
 }
 
 .galery-top-text {
-    color: #303030;
-    margin-bottom: 44px;
+  color: #303030;
+  margin-bottom: 44px;
 }
 
 .galery-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    // margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  // margin: -15px;
 }
 
 .galery-item {
   width: 100%;
   height: 360px;
-  object-fit: cover; // обрезает пропорционально
-  object-position: center; // центрируем
+  object-fit: cover;
+  object-position: center;
 
   @include tablet {
     height: 400px;

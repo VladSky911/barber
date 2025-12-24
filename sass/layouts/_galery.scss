@@ -28,17 +28,20 @@
 
 .galery-item {
   width: 100%;
-  height: 360px;
-  object-fit: cover;
-  object-position: center;
+  // height: 360px;
+  // object-fit: cover;
+  // object-position: center;
 
   @include tablet {
-    height: 400px;
-    object-position: top;
+    width: calc((100% - 30px) / 2);
+    // height: 400px;
+    // object-position: top;
   }
 
   @include desktop {
-    height: 500px;
-    object-position: right center;
+    width: calc((100% - 90px) / 4);
+    //   height: 500px;
+    //   object-position: right center;
+    // }
   }
 }

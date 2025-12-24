@@ -7,6 +7,7 @@
   display: flex;
   width: 100%;
   padding: 0;
+
   @include tablet {
     width: 720px;
     padding-left: 15px;
@@ -23,7 +24,7 @@
       rgba(25, 28, 38, 0.5),
       rgba(25, 28, 38, 0.5)
     ),
-    url(../imeg/hero-bg.jpg);
+    url(../imeg/hero-bg-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -32,11 +33,46 @@
   padding: 208px 31px 188px;
   flex-grow: 1;
 
+  @include retina {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.5),
+        rgba(25, 28, 38, 0.5)
+      ),
+      url(../imeg/hero-bg-mob-2x.jpg);
+  }
+
   @include tablet {
     padding: 280px 70px 234px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.5),
+        rgba(25, 28, 38, 0.5)
+      ),
+      url(../imeg/hero-bg-tab.jpg);
+
+    @include retina {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.5),
+          rgba(25, 28, 38, 0.5)
+        ),
+        url(../imeg/hero-bg-tab-2x.jpg);
+    }
   }
+
   @include desktop {
     padding: 272px 96px 206px 96px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.5),
+        rgba(25, 28, 38, 0.5)
+      ),
+      url(../imeg/hero-bg.jpg);
+
+    @include retina {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.5),
+          rgba(25, 28, 38, 0.5)
+        ),
+        url(../imeg/hero-bg-2x.jpg);
+    }
   }
 }
 
@@ -59,9 +95,11 @@
 .hero-content__bottom-text {
   color: #9da4bd;
   max-width: 306px;
+
   @include tablet {
     max-width: 349px;
   }
+
   @include desktop {
     max-width: 400px;
   }
@@ -71,8 +109,8 @@
   width: 90px;
   display: none;
   align-items: flex-end;
-  // padding-left: 24px;
-  // padding-bottom: 44px;
+  //   padding-left: 24px;
+  padding-bottom: 44px;
   @include tablet {
     display: flex;
   }
@@ -107,7 +145,7 @@
   content: "";
   width: 60px;
   height: 1px;
-  background-color: #303030;
+  background-color: #9da4bd;
   margin-right: 40px;
 }
 

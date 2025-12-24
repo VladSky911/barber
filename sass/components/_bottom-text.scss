@@ -1,6 +1,7 @@
 .bottom-text {
-    @include font(16px, null, 1.62, 0.05em);
-    @include desktop {
+  @include font(16px, null, 1.62, 0.05em);
+
+  @include desktop {
     @include font(18px, null, 1.67, null);
-    }
+  }
 }

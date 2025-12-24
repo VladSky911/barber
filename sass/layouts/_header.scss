@@ -1,64 +1,63 @@
 .header {
-    position: absolute;
-    width: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav {
-    display: none;
+  display: none;
 }
 
 .nav__link,
 .connect__tel {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0,1em;
-    color: #ffffff;
-    transition: color 300ms ease-in-out;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0, 1em;
+  color: #ffffff;
+  transition: color 300ms ease-in-out;
 }
 
-.nav__link:hover, 
-.nav__link:focus
-.connect__tel:hover, 
+.nav__link:hover,
+.nav__link:focus .connect__tel:hover,
 .connect__tel:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .connect__btn {
-    color: var(--main-btn-color);
-    margin-left: 40px;
+  color: var(--main-btn-color);
+  margin-left: 40px;
 }
 
 .logo {
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .header .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav__list {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .nav__item:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .connect {
-    display: none;
-    margin-left: auto;
-    display: center;
+  display: none;
+  margin-left: auto;
+  display: center;
 }
 
-.burger {
-    display: none;
+.menu-open-btn {
+  display: none;
 }

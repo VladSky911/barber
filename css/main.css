@@ -1,5 +1,5 @@
 :root {
-  --main-btn-color:#ffffff;
+  --main-btn-color: #ffffff;
   --second-btn-color: #303030;
   --main-title-color: #ffffff;
   --second-title-color: #303030;
@@ -41,6 +41,10 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .link {
@@ -440,8 +444,88 @@ body {
   display: center;
 }
 
-.menu-open-btn {
-  display: none;
+.menu-open-btn,
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+}
+
+.menu-close-btn {
+  margin-bottom: 30px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mob-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 60px;
+}
+
+.mob-menu-item {
+  margin-bottom: 24px;
+}
+
+.mob-menu-list {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #303030;
+}
+
+.mob-connect-btn {
+  display: block;
+  margin-top: 24px;
+}
+
+.mob-connect {
+  margin-bottom: 64px;
+}
+
+.mob-soc-list {
+  padding-left: 100px;
+  position: relative;
+}
+
+.mob-soc-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.mob-soc-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-soc-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
 
 .about {

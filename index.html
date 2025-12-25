@@ -24,7 +24,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="/imeg/sprite.svg">
 </head>
 
 <body>
@@ -45,17 +44,37 @@
         <a class="connect__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
         <button type="button" class="connect__btn btn" data-modal-open>онлайн-запись</button> 
     </div>
+    </div>
+
         <button type="button" class="menu-open-btn">
             <img class="burger" src="/icons/burger-menu.svg"></img>
-    </button>
-    </div>
-    <div class="mob-menu">
+        </button>
+
+    <div class="mob-menu is-hidden">
+        <div class="mob-container">
        <button class="menu-close-btn" type="button">
         <svg width="24" height="24">
-              <use href="#icon-cross">
+              <use href="/icons/sprite.svg#icon-cross">
               </use>
             </svg>
        </button>
+       <ul class="mob-menu-list list">
+            <li class="mob-menu-item"><a href="#about" class="mob-menu-link link">О нас</a></li>
+            <li class="mob-menu-item"><a href="#services" class="mob-menu-link link">Услуги и цены</a></li>
+            <li class="mob-menu-item"><a href="#masters" class="mob-menu-link link">Мастера</a></li>
+            <li class="mob-menu-item"><a href="#contacts" class="mob-menu-link link">Контакты</a></li>
+        </ul>
+        <div class="mob-connect">
+        <a class="mob-connect-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <button type="button" class="mob-connect-btn btn" data-modal-open>онлайн-запись</button> 
+    </div>
+    <ul class="mob-soc-list list">
+                <li class="mob-soc-item"><a href="" class="mob-soc-link link" target="_blank" 
+                    rel="noopener nofollow noreferrer">instagram</a></li>
+                <li class="mob-soc-item"><a href="" class="mob-soc-link link" target="_blank" 
+                    rel="noopener nofollow noreferrer">youtube</a></li>
+            </ul>
+            </div>
     </div>
     </header>
 
@@ -451,10 +470,10 @@
                     <button type="submit" class="online-btn btn" data-modal-open>Отправить</button>
                 </div>
             </form>
+        </section>
 
-            <!-- Section Contacts -->
+        <!-- Section Contacts -->
 
-        </section>     
                 <section id="contacts" class="contacts">
             <h2 class="contacts-title title">Контакты</h2>
             <address class="contacts-adress">
@@ -571,9 +590,8 @@
 
     <!-- Scripts -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init();</script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>

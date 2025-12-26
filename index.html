@@ -30,7 +30,7 @@
     <header class="header">
     <div class="container">
         <a class="logo animate__animated animate__bounce" href="">
-        <img src="./imeg/Barber-shop.svg" alt="Логотип Барбершопа" width="10" height="10">
+        <img src="./imeg/Barber-shop.svg" alt="Логотип Барбершопа">
         </a>
         <nav class="nav">
         <ul class="nav__list list">
@@ -41,13 +41,13 @@
         </ul>
         </nav>
         <div class="connect">
-        <a class="connect__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-        <button type="button" class="connect__btn btn" data-modal-open>онлайн-запись</button> 
+            <a class="connect__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <button type="button" class="connect__btn btn" data-modal-open>онлайн-запись</button> 
     </div>
     </div>
 
         <button type="button" class="menu-open-btn">
-            <img class="burger" src="/icons/burger-menu.svg"></img>
+            <img src="/icons/burger-menu.svg"></img>
         </button>
 
     <div class="mob-menu is-hidden">
@@ -105,12 +105,12 @@
          <!-- Section About -->
 
         <section id="about" class="about">
-            <div class="container">
-            <ul class="pic-list list">
-                <li class="pic-list__item"><img src="./imeg/about-img-2.jpg" alt="бреет щеку" width="270" height="445">
-                <li class="pic-list__item"><img src="./imeg/about-img-1.jpg" alt=">стрижка машинкой" width="270" height="445">
+            <div class="about-container container">
+            <ul class="about-container__pic-list list">
+                <li class="pic-list__item"><img src="./imeg/about-img-2.jpg" alt="бреет щеку" width="270" height="430">
+                <li class="pic-list__item"><img src="./imeg/about-img-1.jpg" alt=">стрижка машинкой" width="270" height="430">
             </ul>
-            <div class="about-content">
+            <div class="about-container__about-content">
             <p class="about-content__top-text top-text top-text--dark">О нас</p>
             <h2 class="about-content__title title">Лучший барбершоп твоего города</h2>
             <p class="about-content__bottom-text bottom-text">Хочеш изменить свой образ? Тебе к нам!</p>
@@ -495,14 +495,17 @@
     <!-- Footer -->
 
     <footer class="footer">
+        <div class="container">
         <p class="footer-copy">&copy;Copyright 2023</p>
-         <ul class="footer-list">
+         <ul class="footer-soc__list list">
                 <li class="footer-item list"><a href="" target="_blank" 
-                    class="footer-link link" rel="noopener nofollow noreferrer">instagram</a></li>
+                    class="footer-link link" rel="noopener nofollow noreferrer">Instagram</a></li>
                 <li class="footer-item list"><a href="" target="_blank" 
-                    class="footer-link link" rel="noopener nofollow noreferrer">youtube</a></li>
+                    class="footer-link link" rel="noopener nofollow noreferrer">YouTube</a></li>
         </ul>
+      </div>
     </footer>
+
     <div class="backdropn is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>

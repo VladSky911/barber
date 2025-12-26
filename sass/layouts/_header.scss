@@ -5,8 +5,16 @@
   padding-bottom: 32px;
 }
 
+.logo {
+  color: #ffffff;
+}
+
 .nav {
   display: none;
+
+  @include tablet {
+    display: flex;
+  }
 }
 
 .nav__link,
@@ -53,15 +61,37 @@
 }
 
 .connect {
-  display: none;
+  display: block;
   margin-left: auto;
-  display: center;
+  display: none;
+
+  @include tablet {
+    display: flex;
+
+    flex-direction: row-reverse;
+    align-items: center;
+
+    &__tel {
+    }
+  }
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .menu-open-btn,
 .menu-close-btn {
   display: block;
   margin-left: auto;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .menu-close-btn {

@@ -1,86 +1,90 @@
 .services {
-    background-color: #949494;
-    background-image: url(../imeg/services-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 130px;
-    padding-bottom: 130px;
+  background-color: #949494;
+  background-image: url(../imeg/services-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .services-top-text {
-    color: gray;
-    margin-bottom: var(--tipical-margin);
+  color: gray;
+  margin-bottom: var(--tipical-margin);
 }
 
 .services-title {
-    color: var(--main-title-color);
-    margin-bottom: 44px;
+  color: var(--main-title-color);
+  margin-bottom: 44px;
 }
 
 .services-list {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .services-lists {
-    padding: 30px 40px;
-    flex-grow: 1;
-    display: flex;
-    gap: 60px;
+  padding: 30px 40px;
+  flex-grow: 1;
+  display: flex;
+  gap: 60px;
 }
-
 
 .services-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    &:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  &:last-child {
     margin-bottom: 0;
-}
-    &::before {
+  }
+  &::before {
     content: "";
     flex-grow: 1;
     height: 1px;
     background-color: #4a4a4a;
     margin-left: 6px;
     margin-right: 6px;
+  }
 }
-}
-
-
 
 .services-item-light {
-    background: linear-gradient(180deg, 
-     rgba(94, 94, 94, 0.132) 0%, 
-     rgba(37, 34, 34, 0.038) 100%);
-    padding: 20px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(94, 94, 94, 0.132) 0%,
+    rgba(37, 34, 34, 0.038) 100%
+  );
+  padding: 20px 20px;
 }
 
 .services-item-dark {
-    background: linear-gradient(180deg,
-     rgba(22, 22, 22, 0.132) 0%, 
-     rgba(29, 29, 29, 0.226) 100%);
-    padding: 20px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 22, 22, 0.132) 0%,
+    rgba(29, 29, 29, 0.226) 100%
+  );
+  padding: 20px 20px;
 }
 
-
 .services-itm-text {
-    margin-bottom: var(--tipical-margin);
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9da4bd;
-    display: flex;
+  margin-bottom: var(--tipical-margin);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  display: flex;
 }
 
 .services-itm-text:first-child {
-    order: -1;
+  order: -1;
 }
 
 .services-btn {
-    color: var(--main-btn-color);
-    margin-top: 0px auto;
-    display: block;
-    margin-top: 50px;
-    margin-left: 41%;
+  color: var(--main-btn-color);
+  margin-top: 0px auto;
+  display: block;
+  margin-top: 50px;
+  margin-left: 41%;
+
+  &:hover {
+    color: var(--second-btn-color);
+  }
 }

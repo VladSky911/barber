@@ -107,8 +107,28 @@
         <section id="about" class="about">
             <div class="about-container container">
             <ul class="about-container__pic-list list">
-                <li class="pic-list__item"><img src="./imeg/about-img-2.jpg" alt="бреет щеку" width="270" height="430">
-                <li class="pic-list__item"><img src="./imeg/about-img-1.jpg" alt=">стрижка машинкой" width="270" height="430">
+                <li class="pic-list__item">
+                    <picture>
+                    <source srcset="/imeg/about-img-2.jpg 1x, 
+                        /imeg/about-img-2-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img 
+                    src="./imeg/about-img-tab-2.jpg" 
+                    alt="бреет щеку" 
+                    width="330">
+                    </picture>
+                    </li>
+                <li class="pic-list__item">
+                    <picture>
+                    <source srcset="/imeg/about-img-1.jpg 1x, 
+                        /imeg/about-img-1-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img 
+                    src="./imeg/about-img-tab-1.jpg" 
+                    alt="стрижка машинкой" 
+                    width="330">
+                    </picture>
+                    </li>
             </ul>
             <div class="about-container__about-content">
             <p class="about-content__top-text top-text top-text--dark">О нас</p>
@@ -116,7 +136,7 @@
             <p class="about-content__bottom-text bottom-text">Хочеш изменить свой образ? Тебе к нам!</p>
             <p class="about-content__text">Мы специализируемся на мужских стрижках и стайлинге бороды. Наши мастера постоянно повышают квалификацию, чтобы быть в курсе последних тенденций и техник. 
                 Мы используем только качественные инструменты и продукты, чтобы обеспечить лучший результат для наших клиентов.</p>
-            <button type="button" class="about-content__btn btn">онлайн-запись</button>
+            <button type="button" class="about-content__btn btn" data-modal-open>онлайн-запись</button>
             </div>
             </div>
         </section>
@@ -165,7 +185,7 @@
                 </li>
             </ul>
             </div>
-        <button type="button" class="services-btn btn">онлайн-запись</button>
+        <button type="button" class="services-btn btn" data-modal-open>онлайн-запись</button>
         </div>
         </section>
 
@@ -173,29 +193,30 @@
 
         <section id="benefits" class="benefits">
             <div class="container">
-            <ul class="benefits-list">
-                <li class="benefits-item list">
-                    <span class="benefits-num">35</span>
-                    <p class="benefits-item-text">Довольных клиентов в день</p>
+            <ul class="benefits__list">
+                <li class="benefits__item list">
+                    <span class="benefits__num">35</span>
+                    <p class="benefits__item-text">Довольных клиентов в день</p>
                 </li>
-                <li class="benefits-item list">
-                    <span class="benefits-num">23</span>
-                    <p class="benefits-item-text">Награды за отличный сервис</p>
+                <li class="benefits__item list">
+                    <span class="benefits__num">23</span>
+                    <p class="benefits__item-text">Награды за отличный сервис</p>
                 </li>
-                <li class="benefits-item list">
-                    <span class="benefits-num">7</span>
-                    <p class="benefits-item-text">Лучших мастеров Мариуполя</p>
+                <li class="benefits__item list">
+                    <span class="benefits__num">7</span>
+                    <p class="benefits__item-text">Лучших мастеров Мариуполя</p>
                 </li>
-                <li class="benefits-item list">
-                    <span class="benefits-num">500</span>
-                    <p class="benefits-item-text">Подарков постоянным клиентам</p>
+                <li class="benefits__item list">
+                    <span class="benefits__num">500</span>
+                    <p class="benefits__item-text">Подарков постоянным клиентам</p>
                 </li>
             </ul>
             <div class="benefits-content">
-            <p class="benefits-top-text top-text">Старая традиционная школа</p>
-            <h2 class="benefits-title title">Почему приходят к нам?</h2>
-            <p class="benefits-bottom-text bottom-text">В нашем барбершопе мы придерживаемся старых традиций и ценим качество обслуживания. 
-                Мы создаем атмосферу, в которой каждый клиент чувствует себя комфортно и уверенно. 
+            <p class="benefits-content__top-text top-text">Старая традиционная школа</p>
+            <h2 class="benefits-content__title title">Почему приходят к нам?</h2>
+            <p class="benefits-content__bottom-text bottom-text">В нашем барбершопе 
+                мы придерживаемся старых традиций и ценим качество обслуживания. <br> 
+                Мы создаем атмосферу, в которой каждый клиент чувствует себя комфортно и уверенно. <br>
                 Наши мастера обладают высоким уровнем профессионализма и 
                 всегда готовы предложить индивидуальный подход к каждому посетителю.</p>
             </div>

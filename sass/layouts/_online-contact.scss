@@ -1,32 +1,73 @@
 .contact-wrap {
-  max-width: 1250px;
-  margin: 0 auto;
+  background-color: #191c26;
+  background-position: center center;
+  background-size: cover;
   background-image: url(../imeg/contact-bg.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: calc(#{50%} - 15px);
-  background-color: #191c26;
+
+  @include tablet {
+  }
+
+  @include desktop {
+    display: block;
+    width: 100vw;
+    margin: 0;
+    max-width: none;
+
+    background-image: url(../imeg/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(#{50%} - 15px);
+    background-color: #191c26;
+  }
 }
 
 .contact-wrap .container {
-  display: flex;
+  @include tablet {
+  }
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .online {
-  padding-top: 130px;
-  padding-bottom: 130px;
-  width: calc(50% + 15px);
-  padding-right: 40px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @include tablet {
+  }
+
+  @include desktop {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: calc(50% + 15px);
+    padding-right: 40px;
+  }
 }
 
 .online-titel {
   color: var(--main-title-color);
   margin-bottom: 44px;
+  text-align: center;
+
+  @include desktop {
+    color: var(--main-title-color);
+    margin-bottom: 44px;
+    text-align: start;
+  }
 }
 
 .input-field {
   position: relative;
-  width: 265px;
+
+  @include tablet {
+    width: 300px;
+  }
+
+  @include desktop {
+    width: 265px;
+  }
 }
 
 .online-form {
@@ -98,4 +139,55 @@
 
 .online-btn {
   color: var(--main-btn-color);
+}
+
+.contacts {
+  @include tablet {
+  }
+
+  @include desktop {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: calc(50% - 15px);
+    padding-left: 100px;
+  }
+}
+
+.contacts-title {
+  color: var(--main-title-color);
+  margin-bottom: 40px;
+}
+
+.contacts-adress {
+  font-style: normal;
+  margin-bottom: 70px;
+}
+
+.contacts-item + .contacts-item {
+  margin-top: var(--tipical-margin);
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: var(--tipical-margin);
+}
+
+.contacts-time {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  padding-bottom: 84px;
 }

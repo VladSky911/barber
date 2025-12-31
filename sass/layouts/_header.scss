@@ -9,7 +9,7 @@
 .logo {
   width: 68px;
   height: 56px;
-  color: #ffffff;
+  fill: #f7f7f7;
 
   @include tablet {
     width: 66px;
@@ -111,7 +111,7 @@
   fill: #f7f7f7;
   display: flex;
   flex-direction: column;
-  z-index: 100; /* поверх контента */
+  z-index: 1; /* поверх контента */
   padding: 0;
   transition: transform 0.3s ease;
 
@@ -143,13 +143,13 @@
 
 .menu-close-btn {
   margin-bottom: 30px;
-  margin-right: 31px;
+  margin-right: 140px;
 }
 
 .mob-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 120px;
   z-index: 1;
   background-color: #ffffff;
   width: 100vw;

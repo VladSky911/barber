@@ -24,7 +24,7 @@
       rgba(25, 28, 38, 0.5),
       rgba(25, 28, 38, 0.5)
     ),
-    url(../imeg/hero-bg-mob.jpg);
+    url(../img/hero-bg-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +38,7 @@
         rgba(25, 28, 38, 0.5),
         rgba(25, 28, 38, 0.5)
       ),
-      url(../imeg/hero-bg-mob-2x.jpg);
+      url(../img/hero-bg-mob-2x.jpg);
   }
 
   @include tablet {
@@ -47,14 +47,14 @@
         rgba(25, 28, 38, 0.5),
         rgba(25, 28, 38, 0.5)
       ),
-      url(../imeg/hero-bg-tab.jpg);
+      url(../img/hero-bg-tab.jpg);
 
     @include retina {
       background-image: linear-gradient(
           rgba(25, 28, 38, 0.5),
           rgba(25, 28, 38, 0.5)
         ),
-        url(../imeg/hero-bg-tab-2x.jpg);
+        url(../img/hero-bg-tab-2x.jpg);
     }
   }
 
@@ -64,14 +64,14 @@
         rgba(25, 28, 38, 0.5),
         rgba(25, 28, 38, 0.5)
       ),
-      url(../imeg/hero-bg.jpg);
+      url(../img/hero-bg.jpg);
 
     @include retina {
       background-image: linear-gradient(
           rgba(25, 28, 38, 0.5),
           rgba(25, 28, 38, 0.5)
         ),
-        url(../imeg/hero-bg-2x.jpg);
+        url(../img/hero-bg-2x.jpg);
     }
   }
 }

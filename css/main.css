@@ -381,6 +381,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
+.menu-open-btn {
+  display: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,7 +398,7 @@ body.no-scroll {
 .logo {
   width: 68px;
   height: 56px;
-  color: #ffffff;
+  fill: #f7f7f7;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -538,7 +542,7 @@ body.no-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 100; /* поверх контента */
+  z-index: 1; /* поверх контента */
   padding: 0;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -577,13 +581,13 @@ body.no-scroll {
 
 .menu-close-btn {
   margin-bottom: 30px;
-  margin-right: 31px;
+  margin-right: 140px;
 }
 
 .mob-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 120px;
   z-index: 1;
   background-color: #ffffff;
   width: 100vw;
@@ -760,8 +764,8 @@ body.no-scroll {
 
 .hero-content {
   background-color: #202020;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../imeg/hero-bg-mob.jpg);
-  background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../imeg/hero-bg-mob.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../img/hero-bg-mob.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../img/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -772,34 +776,34 @@ body.no-scroll {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../imeg/hero-bg-mob-2x.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../imeg/hero-bg-mob-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../img/hero-bg-mob-2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../img/hero-bg-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero-content {
     padding: 280px 70px 234px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../imeg/hero-bg-tab.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../imeg/hero-bg-tab.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../img/hero-bg-tab.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../img/hero-bg-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../imeg/hero-bg-tab-2x.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../imeg/hero-bg-tab-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../img/hero-bg-tab-2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../img/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-content {
     padding: 272px 96px 206px 96px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../imeg/hero-bg.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../imeg/hero-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../img/hero-bg.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../img/hero-bg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../imeg/hero-bg-2x.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../imeg/hero-bg-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.5)), to(rgba(25, 28, 38, 0.5))), url(../img/hero-bg-2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.5), rgba(25, 28, 38, 0.5)), url(../img/hero-bg-2x.jpg);
   }
 }
 
@@ -908,7 +912,7 @@ body.no-scroll {
 
 .services {
   background-color: #949494;
-  background-image: url(../imeg/services-bg.png);
+  background-image: url(../img/services-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1347,7 +1351,7 @@ body.no-scroll {
   background-color: #191c26;
   background-position: center center;
   background-size: cover;
-  background-image: url(../imeg/contact-bg.png);
+  background-image: url(../img/contact-bg.png);
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 1200px) {
@@ -1356,7 +1360,7 @@ body.no-scroll {
     width: 100vw;
     margin: 0;
     max-width: none;
-    background-image: url(../imeg/contact-bg.png);
+    background-image: url(../img/contact-bg.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: calc(50% - 15px);

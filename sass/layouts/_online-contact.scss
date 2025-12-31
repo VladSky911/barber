@@ -2,7 +2,7 @@
   background-color: #191c26;
   background-position: center center;
   background-size: cover;
-  background-image: url(../imeg/contact-bg.png);
+  background-image: url(../img/contact-bg.png);
   background-repeat: no-repeat;
 
   @include tablet {
@@ -14,7 +14,7 @@
     margin: 0;
     max-width: none;
 
-    background-image: url(../imeg/contact-bg.png);
+    background-image: url(../img/contact-bg.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: calc(#{50%} - 15px);

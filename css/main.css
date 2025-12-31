@@ -83,6 +83,7 @@ body.no-scroll {
 }
 @media screen and (min-width: 768px) {
   .container {
+    width: 100%;
     width: 720px;
   }
 }
@@ -1215,6 +1216,7 @@ body.no-scroll {
   .masters {
     padding-top: 100px;
     padding-bottom: 100px;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1353,6 +1355,11 @@ body.no-scroll {
   background-size: cover;
   background-image: url(../img/contact-bg.png);
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .contact-wrap {
+    width: 100vw;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact-wrap {

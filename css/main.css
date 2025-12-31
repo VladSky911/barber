@@ -454,6 +454,9 @@ body.no-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__list {
@@ -522,11 +525,12 @@ body.no-scroll {
 
 .menu-open-btn {
   position: relative;
-  width: 32px;
-  height: 22px;
+  width: 40px;
+  height: 40px;
   border: none;
   background: none;
   cursor: pointer;
+  fill: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,9 +538,6 @@ body.no-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   z-index: 100; /* поверх контента */
   padding: 0;
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -548,20 +549,27 @@ body.no-scroll {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
 
-.menu-open-btn,
 .menu-close-btn {
   display: block;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .menu-open-btn,
   .menu-close-btn {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .menu-open-btn,
   .menu-close-btn {
     display: none;
   }

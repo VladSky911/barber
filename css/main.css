@@ -1197,6 +1197,7 @@ body.no-scroll {
 .masters {
   padding-top: 84px;
   padding-bottom: 84px;
+  background-color: #f7f7f7;
 }
 @media screen and (min-width: 768px) {
   .masters {

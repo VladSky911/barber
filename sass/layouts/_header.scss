@@ -6,6 +6,12 @@
   padding-bottom: 32px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   width: 68px;
   height: 56px;
@@ -53,11 +59,10 @@
   color: var(--accent-color);
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+// .header .container {
+//   display: flex;
+//   align-items: center;
+// }
 
 .nav__list {
   display: flex;

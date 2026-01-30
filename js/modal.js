@@ -23,6 +23,20 @@
     body: document.querySelector("body"),
   };
 
+  refs.modal.addEventListener("click", (e) => {
+    // Закрывает при клике на фон
+    if (e.target === refs.modal) {
+      toggleModal();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    // Закрывает при Esc
+    if (e.key === "Escape" && !refs.modal.classList.contains("is-hidden")) {
+      toggleModal();
+    }
+  });
+
   // навешиваем обработчик на каждую кнопку открытия
   refs.openModalBtns.forEach((btn) => {
     btn.addEventListener("click", toggleModal);
